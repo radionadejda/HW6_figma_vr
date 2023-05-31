@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+
+body {
+  background-image: url(../assets/background.png);
+  background-size: cover;
+  padding-right: 40px;
+  padding-left: 82px;
+}
+.container {
+  display: grid;
+  grid-template-rows: 1fr 2fr 1fr;
+  height: 100vh;
+}
+header {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  text-transform: uppercase;
+}
+.logo {
+  display: flex;
+  align-items: center;
+}
+.navigation {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.button-top {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#contact,
+#join,
+#build {
+  border: 1px solid whitesmoke;
+  border-radius: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  width: 154px;
+  height: 48px;
+}
+#contact:hover,
+#join:hover,
+#build:hover {
+  background-image: linear-gradient(to right, #afafb4, #8176af);
+}
+main {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 2fr 1fr;
+  column-gap: 10%;
+}
+.main-section {
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+}
+.text-big,
+.text-small {
+  padding-top: 30px;
+}
+
+.text-small {
+  font-weight: lighter;
+}
+.text-big {
+  font-weight: 700;
+  font-size: x-large;
+}
+.button-middle {
+  display: flex;
+}
+
+#build {
+  align-self: center;
+}
+
+strong {
+  color: transparent;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, #848386, #c0b7e8);
+  font-weight: 700;
+}
+footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 10px;
+  gap: 10px;
+  /* background-image: url(../assets/footer.png); */
+  background-image: linear-gradient(to right, #211e2eb1, #3a3456c3, #211e2eba);
+  border-radius: 90px;
+  margin: 30px;
+}
+.ft_section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center {
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+}
